@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/colorDarkGrey"
+    >
+
+    <RelativeLayout
+        android:id="@+id/adapterView_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/userimage_Imageview_adapter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            />
+
+        <TextView
+            android:id="@+id/username_textview_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/userimage_Imageview_adapter"
+            android:layout_toEndOf="@+id/userimage_Imageview_adapter"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/agencybb"
+            android:text="@string/username"
+            android:textColor="@color/colorDarkGrey2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/points_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_textview_adapter"
+            android:layout_toEndOf="@+id/userimage_Imageview_adapter"
+            android:layout_toRightOf="@+id/userimage_Imageview_adapter"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/agencybb"
+            android:text="@string/stats_points"
+            android:textColor="@color/colorDark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/points_textview_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_textview_adapter"
+            android:layout_toEndOf="@+id/points_textview"
+            android:layout_toRightOf="@+id/points_textview"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/agencybb"
+            android:text="@string/stats_points"
+            android:textColor="@color/colorDark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp">
+
+            <ImageView
+                android:id="@+id/circle_imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:tint="@color/colorDarkGrey2"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/shape_rounded" />
+
+            <TextView
+                android:id="@+id/rank_textview_adapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/agencybb"
+                android:text="@string/nulll"
+                android:textAlignment="center"
+                android:textColor="@color/colorOrange"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

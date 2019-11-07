@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Clymbr Alpha</string>
+
+    <string name="background">background</string>
+    <string name="logo">logo</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="email_example">myemail@example.com</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="login">LOGIN</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="already_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="remember_me">Remember me?</string>
+    <string name="welcome_user">Welcome! Please enter your current climbing Gym:</string>
+    <string name="select_gym">Select Gym</string>
+    <string name="one_more_step">Just one more step!</string>
+    <string name="novice">Novice (&lt;1 Year Climbing)</string>
+    <string name="intermediate">Intermediate (&gt;1 Year Climbing)</string>
+    <string name="novice_text">
+        I love climbing, but wouldn\'t feel comfortable contributing to the grading system just yet.</string>
+    <string name="intermediate_text">
+        I\'ve a familiarity with how climbing grades work,and I am happy to recommend a grade
+        if I feel a route is a little harder or easier than the grade suggests.</string>
+    <string name="continue_text">CONTINUE</string>
+
+
+    <string name="username">Username:</string>
+    <string name="repassword">Re-Enter password:</string>
+    <string name="nav_gym">Gym</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_train">Train</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="change_profile_image">Change your Profile Image</string>
+    <string name="bio">Bio:</string>
+    <string name="gym">Local Gym:</string>
+    <string name="private_info">Personal Information</string>
+    <string name="update_settings">Update settings</string>
+
+    <string name="choose_your_gym">Choose your Gym:</string>
+
+    <string name="select_zone">Select Zone:</string>
+    <string name="active_users">Active Clymbrs: %1$d</string>
+
+    <string name="classs">Class:</string>
+    <string name="flash_points">Flash points:</string>
+    <string name="points">Points:</string>
+    <string name="grade">Grade:</string>
+    <string name="completed">Status:</string>
+    <string name="avg_tries">Average Tries:</string>
+    <string name="your_progress">Your tries:</string>
+    <string name="topout">PRESS TO TOP OUT!</string>
+    <string name="update_tries">UPDATE TRIES</string>
+    <string name="topout_complete">TOPPED OUT</string>
+    <string name="tries_done">DONE</string>
+    <string name="tries_not_done">NOT DONE</string>
+    <string name="nulll"></string>
+    <string name="none">None</string>
+    <string name="good_job">GOOD JOB!</string>
+    <string name="tries">TRIES: </string>
+    <string name="default_tries">1</string>
+
+    <string name="dbname_users">users</string>
+    <string name="dbname_boulders">boulders</string>
+    <string name="dbname_leaderboards">leaderboards</string>
+    <string name="dbname_username">username</string>
+    <string name="dbname_localgym">local_gym</string>
+    <string name="dbname_activegym">active_gym</string>
+    <string name="dbname_gym">gym</string>
+    <string name="dbname_bio">bio</string>
+    <string name="dbname_points">points</string>
+    <string name="dbname_grade">grade</string>
+    <string name="dbname_climbs">total_climbs</string>
+    <string name="dbname_tries">total_tries</string>
+    <string name="dbname_avgtries">avg_tries</string>
+    <string name="dbname_rank">rank</string>
+    <string name="dbname_email">email</string>
+
+    <string name="dbname_boulder_name">name</string>
+    <string name="dbname_boulder_grade">grade</string>
+    <string name="dbname_boulder_class">class</string>
+    <string name="dbname_boulder_status">boulder</string>
+    <string name="dbname_boulder_points">points</string>
+    <string name="dbname_boulder_tries1">boulder</string>
+    <string name="dbname_boulder_tries2">_tries</string>
+    <string name="dbname_boulder_status2">_status</string>
+    <string name="dbname_boulder_notcompleted">NOT DONE</string>
+    <string name="dbname_boulder_completed">DONE</string>
+    <string name="boulder1">Yellow #1</string>
+    <string name="boulder2">Blue #1</string>
+
+    <string name="stats_points">Points:</string>
+
+    <string name="train_finger">FINGER CONDITIONING</string>
+    <string name="train_flexibility">FLEXIBILITY</string>
+    <string name="train_strength">STRENGTH</string>
+
+    <string name="stats_leaderboard">Leaderboard</string>
+    <string name="stats_climbs">Total Climbs:</string>
+    <string name="stats_tries">Average Tries:</string>
+    <string name="stats_grade">Climbing Grade:</string>
+
+    <string name="train_description">EXERCISE</string>
+    <string name="train_sets">SETS</string>
+    <string name="train_reps">REPS</string>
+    <string name="train_exerciseHint">Enter Exercise:</string>
+    <string name="train_setrepHint">0</string>
+    <string name="train_edit">EDIT</string>
+    <string name="train_save">SAVE</string>
+
+    <string name="profile_gym">Active Gym:</string>
+    <string name="profile_points">Total Points:</string>
+    <string name="profile_grade">Climbing Grade:</string>
+    <string name="profile_climbs">Total Climbs Completed:</string>
+    <string name="profile_tries">Average Tries per Climb:</string>
+    <string name="profile_rank">Current Gym Rank:</string>
+    <string name="profile_nograde">Complete 3 climbs!</string>
+
+    <string name="signout">Log out</string>
+
+    <item name="routeColour" type="id" />
+    <item name="routeColour2" type="id" />
+    <item name="routeId" type="id" />
+
+</resources>

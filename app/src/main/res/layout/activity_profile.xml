@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/colorDark"
+    android:id="@+id/layout_profile"
+    android:paddingTop="8dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/logo_imageView"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                />
+
+            <ImageButton
+                android:id="@+id/profilesettings_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorTransparent"
+                android:tint="@color/colorOrange"
+                android:src="@android:drawable/ic_dialog_info"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/Profile_Imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/logo_imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/baseline_person_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/profileUsername_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dbname_username"
+                android:fontFamily="@font/agencybb"
+                android:textColor="@color/colorOrange"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Profile_Imageview"
+                android:paddingTop="40dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/profileBio_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dbname_bio"
+                android:fontFamily="@font/agencybb"
+                android:textColor="@color/colorOrange"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/profileUsername_Textview"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/profileGym_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_gym"
+                android:textColor="@color/colorOrange"
+                android:layout_below="@+id/profileBio_Textview"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                />
+
+            <TextView
+                android:id="@+id/gym_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nulll"
+                android:textColor="@color/colorOrange"
+                android:layout_toRightOf="@+id/profileGym_Textview"
+                android:layout_alignBottom="@id/profileGym_Textview"
+                android:layout_marginLeft="120dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"/>
+
+            <TextView
+                android:id="@+id/profilePoints_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_points"
+                android:textColor="@color/colorOrange"
+                android:layout_below="@+id/profileGym_Textview"
+                android:layout_alignLeft="@+id/profileGym_Textview"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                />
+
+            <TextView
+                android:id="@+id/profile_points_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nulll"
+                android:textColor="@color/colorOrange"
+                android:layout_alignBottom="@id/profilePoints_Textview"
+                android:layout_alignLeft="@+id/gym_Textview"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                />
+
+            <TextView
+                android:id="@+id/profile_grade_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_grade"
+                android:textColor="@color/colorOrange"
+                android:layout_below="@+id/profilePoints_Textview"
+                android:layout_alignLeft="@+id/profilePoints_Textview"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/profileGrade_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_nograde"
+                android:textColor="@color/colorOrange"
+                android:layout_alignBottom="@id/profile_grade_Textview"
+                android:layout_alignLeft="@+id/profile_points_Textview"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/profile_climbs_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_climbs"
+                android:textColor="@color/colorOrange"
+                android:layout_below="@+id/profile_grade_Textview"
+                android:layout_alignLeft="@+id/profile_grade_Textview"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/profileClimbs_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nulll"
+                android:textColor="@color/colorOrange"
+                android:layout_alignBottom="@id/profile_climbs_Textview"
+                android:layout_alignLeft="@+id/profileGrade_Textview"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                />
+
+            <TextView
+                android:id="@+id/profile_tries_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_tries"
+                android:textColor="@color/colorOrange"
+                android:layout_below="@+id/profile_climbs_Textview"
+                android:layout_alignLeft="@+id/profile_climbs_Textview"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/profileTries_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nulll"
+                android:textColor="@color/colorOrange"
+                android:layout_alignBottom="@id/profile_tries_Textview"
+                android:layout_alignLeft="@+id/profileClimbs_Textview"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                />
+
+            <TextView
+                android:id="@+id/profile_rank_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_rank"
+                android:textColor="@color/colorOrange"
+                android:layout_below="@+id/profile_tries_Textview"
+                android:layout_alignLeft="@+id/profile_tries_Textview"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/profileRank_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nulll"
+                android:textColor="@color/colorOrange"
+                android:layout_alignBottom="@id/profile_rank_Textview"
+                android:layout_alignLeft="@+id/profileTries_Textview"
+                android:textSize="20sp"
+                android:fontFamily="@font/agencybb"
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"
+        app:itemTextColor="@color/colorOrange"
+        app:itemIconTint="@color/nav_items_colors">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

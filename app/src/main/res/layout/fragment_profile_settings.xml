@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSettingsFragment"
+    android:background="@color/colorDark"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/logo_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/goBack_imageButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/round_arrow_back_black_24dp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+
+                <ImageView
+                    android:id="@+id/settingsProfile_Imageview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/logo_imageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/baseline_person_black_24dp" />
+
+                <Button
+                    android:id="@+id/changeProfileImage_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_profile_image"
+                    android:fontFamily="@font/agencybb"
+                    android:textColor="@color/colorOrange"
+                    android:layout_below="@+id/settingsProfile_Imageview"
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorTransparent"
+                    android:layout_marginTop="20dp"/>
+
+
+                <TextView
+                    android:id="@+id/settingsUsername_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:fontFamily="@font/agencybb"
+                    android:textColor="@color/colorOrange"
+                    android:layout_below="@+id/changeProfileImage_Button"
+                    android:paddingTop="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="24sp"
+                    />
+
+                <EditText
+                    android:id="@+id/settingsUsername_Edittext"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/settingsUsername_Textview"
+                    android:layout_toEndOf="@+id/settingsUsername_Textview"
+                    android:text="@string/nulll"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/agencybb"
+                    android:layout_alignBaseline="@+id/settingsUsername_Textview"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/edit_text_white_box"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/settingsBio_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bio"
+                    android:fontFamily="@font/agencybb"
+                    android:textColor="@color/colorOrange"
+                    android:layout_below="@+id/settingsUsername_Textview"
+                    android:layout_alignLeft="@+id/settingsUsername_Textview"
+                    android:layout_alignStart="@+id/settingsUsername_Textview"
+                    android:paddingTop="30dp"
+                    android:textSize="24sp"
+                    />
+
+                <EditText
+                    android:id="@+id/settingsBio_Edittext"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/settingsUsername_Edittext"
+                    android:layout_alignLeft="@+id/settingsUsername_Edittext"
+                    android:text="@string/nulll"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="40"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/agencybb"
+                    android:layout_alignBaseline="@+id/settingsBio_Textview"
+                    android:background="@drawable/edit_text_white_box"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/settingsGym_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_gym"
+                    android:fontFamily="@font/agencybb"
+                    android:textColor="@color/colorOrange"
+                    android:layout_below="@+id/settingsBio_Textview"
+                    android:layout_alignLeft="@+id/settingsBio_Textview"
+                    android:layout_alignStart="@+id/settingsBio_Textview"
+                    android:paddingTop="30dp"
+                    android:textSize="24sp"
+                    />
+
+                <Spinner
+                    android:id="@+id/activeGym_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textAlignment="center"
+                    android:layout_alignStart="@+id/settingsUsername_Edittext"
+                    android:layout_alignLeft="@+id/settingsUsername_Edittext"
+                    android:layout_alignRight="@+id/settingsUsername_Edittext"
+                    android:layout_alignEnd="@+id/settingsUsername_Edittext"
+                    android:layout_alignBottom="@id/settingsGym_Textview"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/agencybb"
+                    android:dropDownWidth="wrap_content"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+
+
+                <TextView
+                    android:id="@+id/privateinfo_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/private_info"
+                    android:fontFamily="@font/agencybb"
+                    android:textColor="@color/colorOrange"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/settingsGym_Textview"
+                    android:paddingTop="30dp"
+                    android:textSize="28sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/settingsEmail_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:fontFamily="@font/agencybb"
+                    android:textColor="@color/colorOrange"
+                    android:layout_below="@+id/privateinfo_Textview"
+                    android:layout_alignLeft="@+id/settingsUsername_Textview"
+                    android:layout_alignStart="@+id/settingsUsername_Textview"
+                    android:paddingTop="30dp"
+                    android:textSize="24sp"
+                    />
+
+                <EditText
+                    android:id="@+id/settingsEmail_Edittext"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/settingsUsername_Edittext"
+                    android:text="@string/nulll"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/agencybb"
+                    android:layout_alignBaseline="@+id/settingsEmail_Textview"
+                    android:background="@drawable/edit_text_white_box"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/updatesettings_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_settings"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/agencybb"
+                    android:textColor="@color/colorOrange"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/settingsEmail_Textview"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorTransparent"/>
+
+                <Button
+                    android:id="@+id/signout_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signout"
+                    android:fontFamily="@font/agencybb"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorOrange"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/updatesettings_Button"
+                    android:background="@color/colorTransparent"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

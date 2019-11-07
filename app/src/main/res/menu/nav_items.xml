@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_gym"
+        android:icon="@drawable/baseline_home_black_24dp"
+        android:title="@string/nav_gym" />
+    <item
+        android:id="@+id/nav_stats"
+        android:icon="@drawable/baseline_bar_chart_black_24dp"
+        android:title="@string/nav_stats" />
+    <item
+        android:id="@+id/nav_train"
+        android:icon="@drawable/baseline_view_headline_black_24dp"
+        android:title="@string/nav_train" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/baseline_person_black_24dp"
+        android:title="@string/nav_profile" />
+</menu>

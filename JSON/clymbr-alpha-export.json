@@ -1,0 +1,235 @@
+{
+  "gym" : {
+    "The Wall" : {
+      "birdseye_url" : "https://firebasestorage.googleapis.com/v0/b/clymbr-app.appspot.com/o/birdseye_view%2Fthe_wall.jpg?alt=media&token=b3fc0abb-d6c5-4629-9d16-746bc2097b37",
+      "logo_url" : "https://firebasestorage.googleapis.com/v0/b/clymbr-app.appspot.com/o/logos%2Fclimb_logo.jpg?alt=media&token=de3047fe-c908-48e2-bb87-93627843ab9f",
+      "zone_1" : {
+        "black" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Black",
+            "colour1" : "#414141",
+            "colour2" : "#000000",
+            "grade" : "6c+",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 180
+          }
+        },
+        "ios_x_coordinate" : 65,
+        "ios_y_coordinate" : 500,
+        "orange" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Orange",
+            "colour1" : "#EBB687",
+            "colour2" : "#FF871E",
+            "grade" : "5c",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 100
+          }
+        },
+        "pink" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Pink",
+            "colour1" : "#E297DA",
+            "colour2" : "#E91EC7",
+            "grade" : "5c",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 270
+          }
+        },
+        "x_coordinate" : 45,
+        "y_coordinate" : 410,
+        "zone_height" : 1696,
+        "zone_url" : "https://firebasestorage.googleapis.com/v0/b/clymbr-app.appspot.com/o/zones%2Fthe_wall%2Fzone_1.png?alt=media&token=691d85f7-6a46-4808-98a5-5ee19084892f",
+        "zone_width" : 12064
+      },
+      "zone_2" : {
+        "black" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Black",
+            "colour1" : "#414141",
+            "colour2" : "#000000",
+            "grade" : "6a",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 290
+          }
+        },
+        "blue" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Blue",
+            "colour1" : "#87CEEB",
+            "colour2" : "#1E90FF",
+            "grade" : "4c",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 420
+          }
+        },
+        "green" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Green",
+            "colour1" : "#8EEB87",
+            "colour2" : "#61FF1E",
+            "grade" : "6c",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 140
+          }
+        },
+        "ios_x_coordinate" : 150,
+        "ios_y_coordinate" : 750,
+        "mint" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Mint",
+            "colour1" : "#87EBC8",
+            "colour2" : "#1EFFFF",
+            "grade" : "7b",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 775
+          }
+        },
+        "orange" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Orange",
+            "colour1" : "#EBB687",
+            "colour2" : "#FF871E",
+            "grade" : "5b",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 650
+          }
+        },
+        "pink" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Pink",
+            "colour1" : "#E297DA",
+            "colour2" : "#E91EC7",
+            "grade" : "5a",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 530
+          }
+        },
+        "purple" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Purple",
+            "colour1" : "#AA87EB",
+            "colour2" : "#7C1EFF",
+            "grade" : "4a",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 1265
+          }
+        },
+        "red" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Red",
+            "colour1" : "#EB8787",
+            "colour2" : "#FF1E1E",
+            "grade" : "5c",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 965
+          }
+        },
+        "x_coordinate" : 170,
+        "y_coordinate" : 360,
+        "yellow" : {
+          "boulder1" : {
+            "avg_tries" : 0,
+            "class" : "Yellow",
+            "colour1" : "#E8EB87",
+            "colour2" : "#FFE11E",
+            "grade" : "4b",
+            "sum_tries" : 0,
+            "sum_users" : 0,
+            "x_pos" : 10
+          }
+        },
+        "zone_height" : 1696,
+        "zone_url" : "https://firebasestorage.googleapis.com/v0/b/clymbr-app.appspot.com/o/zones%2Fthe_wall%2Fzone_2_test.png?alt=media&token=1f026c54-a3f7-4454-829f-6377fcfdd83c",
+        "zone_width" : 12064
+      }
+    }
+  },
+  "leaderboards" : {
+    "The Wall" : {
+      "NaiULo0SbKYjRC4uJ7LJMxaEev73" : {
+        "avg_tries" : 0,
+        "bio" : "Test Bio",
+        "grade" : "",
+        "imageResource" : 0,
+        "points" : 0,
+        "profile_url" : "https://firebasestorage.googleapis.com/v0/b/clymbr-app.appspot.com/o/profile_photos%2Fdefault-profile-picture.png?alt=media&token=22517a56-a09c-4871-b05c-3eb3463870c6",
+        "total_climbs" : 0,
+        "userId" : "NaiULo0SbKYjRC4uJ7LJMxaEev73",
+        "username" : "Test Climber1"
+      },
+      "zXhv9DLw95UCSBcUHDiYCbQF92K2" : {
+        "avg_tries" : 0,
+        "bio" : "ITS MY BIRTHDAY",
+        "grade" : "",
+        "imageResource" : 0,
+        "points" : 0,
+        "profile_url" : "https://firebasestorage.googleapis.com/v0/b/clymbr-app.appspot.com/o/profile_photos%2FzXhv9DLw95UCSBcUHDiYCbQF92K2.jpg?alt=media&token=b728f572-0dc0-4fc3-924c-64c08927ca98",
+        "total_climbs" : 0,
+        "userId" : "zXhv9DLw95UCSBcUHDiYCbQF92K2",
+        "username" : "rebecca"
+      }
+    }
+  },
+  "users" : {
+    "NaiULo0SbKYjRC4uJ7LJMxaEev73" : {
+      "active_gym" : "The Wall",
+      "available_gyms" : {
+        "gym1" : "The Wall"
+      },
+      "avg_tries" : 0,
+      "bio" : "Test Bio",
+      "email" : "test@gmail.com",
+      "grade" : "",
+      "local_gym" : "",
+      "points" : 0,
+      "profile_url" : "https://firebasestorage.googleapis.com/v0/b/clymbr-app.appspot.com/o/profile_photos%2Fdefault-profile-picture.png?alt=media&token=22517a56-a09c-4871-b05c-3eb3463870c6",
+      "rank" : 0,
+      "total_climbs" : 0,
+      "total_tries" : 0,
+      "userId" : "NaiULo0SbKYjRC4uJ7LJMxaEev73",
+      "username" : "Test Climber1"
+    },
+    "default" : -1,
+    "zXhv9DLw95UCSBcUHDiYCbQF92K2" : {
+      "active_gym" : "The Wall",
+      "available_gyms" : {
+        "gym1" : "The Wall"
+      },
+      "avg_tries" : 0,
+      "bio" : "ITS MY BIRTHDAY",
+      "email" : "rebecca@gmail.com",
+      "grade" : "",
+      "local_gym" : "",
+      "points" : 0,
+      "profile_url" : "https://firebasestorage.googleapis.com/v0/b/clymbr-app.appspot.com/o/profile_photos%2FzXhv9DLw95UCSBcUHDiYCbQF92K2.jpg?alt=media&token=b728f572-0dc0-4fc3-924c-64c08927ca98",
+      "rank" : 0,
+      "total_climbs" : 0,
+      "total_tries" : 0,
+      "userId" : "zXhv9DLw95UCSBcUHDiYCbQF92K2",
+      "username" : "rebecca"
+    }
+  }
+}

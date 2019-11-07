@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_train_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainActivity"
+    android:background="@color/colorDark"
+    android:paddingTop="8dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo_imageView"
+        android:contentDescription="@string/nulll"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/description_Textview"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_imageView"
+        android:text="@string/train_description"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:textColor="@color/colorOrange"
+        android:background="@color/colorTransparent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/sets_Textview"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/description_Textview"
+        android:layout_toRightOf="@+id/description_Textview"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:textColor="@color/colorOrange"
+        android:background="@color/colorTransparent"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/description_Textview"
+        android:text="@string/train_sets"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/reps_Textview"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/sets_Textview"
+        android:layout_toRightOf="@+id/sets_Textview"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:textColor="@color/colorOrange"
+        android:background="@color/colorTransparent"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/description_Textview"
+        android:text="@string/train_reps"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/train_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/description_Textview"
+        android:layout_above="@+id/save_Button"
+        android:layout_margin="16dp"
+        android:scrollbars="vertical"
+        />
+
+    <Button
+        android:id="@+id/save_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/train_save"
+        android:textColor="@color/colorOrange"
+        android:fontFamily="@font/agencybb"
+        android:background="@color/colorTransparent"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/navigation_view" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"
+        app:itemTextColor="@color/colorOrange"
+        app:itemIconTint="@color/nav_items_colors">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

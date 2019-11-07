@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_testGym"
+    tools:context=".testGymActivity"
+    android:background="@color/colorWhite"
+    >
+
+    <ImageButton
+        android:id="@+id/goBack_imageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/round_arrow_back_black_24dp"
+        android:backgroundTint="@color/colorOrange"
+        android:layout_alignBottom="@+id/logo_imageView"/>
+
+    <ImageView
+        android:id="@+id/logo_imageView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        />
+
+    <TextView
+        android:id="@+id/chooseGym_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_gym"
+        android:textColor="@color/colorOrange"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:layout_below="@+id/logo_imageView"
+        android:layout_marginLeft="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gym_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chooseGym_textView"
+        android:layout_margin="10dp"
+        android:background="@null">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+    <!--android:id="@+id/navigation_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--app:menu="@menu/nav_items"-->
+    <!--app:itemTextColor="@color/colorOrange"-->
+    <!--app:itemIconTint="@color/nav_items_colors">-->
+
+    <!--</android.support.design.widget.BottomNavigationView>-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StatsActivity"
+    android:background="@color/colorDark">
+
+
+    <TextView
+        android:id="@+id/leaderboard_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stats_leaderboard"
+        android:textColor="@color/colorOrange"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/gymname_Textview"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorOrange"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/leaderboard_textview"
+        android:layout_alignEnd="@+id/leaderboard_Relativelayout"
+        android:layout_alignRight="@+id/leaderboard_Relativelayout"/>
+
+    <RelativeLayout
+        android:id="@+id/leaderboard_Relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/leaderboard_textview"
+        android:layout_above="@+id/navigation_view"
+        android:layout_margin="8dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/leaderboard_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:id="@+id/user_click_Relativelayout"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorDarkGrey2"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/clkExit_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="#00FFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@android:drawable/ic_notification_clear_all"
+                android:tint="#00FFFFFF" />
+
+            <ImageView
+                android:id="@+id/clkProfile_Imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/baseline_person_black_24dp" />
+
+            <TextView
+                android:id="@+id/clkprofileUsername_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dbname_username"
+                android:fontFamily="@font/agencybb"
+                android:textColor="@color/colorOrange"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/clkProfile_Imageview"
+                android:paddingTop="40dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/clkprofileBio_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dbname_bio"
+                android:fontFamily="@font/agencybb"
+                android:textColor="@color/colorOrange"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/clkprofileUsername_Textview"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/clkprofileGrade_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/clkprofileBio_Textview"
+                android:layout_marginTop="30dp"
+                android:text="@string/stats_grade"
+                android:fontFamily="@font/agencybb"
+                android:textColor="@color/colorOrange"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/clkprofileClimbs_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/clkprofileGrade_Textview"
+                android:text="@string/stats_climbs"
+                android:fontFamily="@font/agencybb"
+                android:textColor="@color/colorOrange"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/clkprofileTries_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/clkprofileClimbs_Textview"
+                android:text="@string/stats_tries"
+                android:fontFamily="@font/agencybb"
+                android:textColor="@color/colorOrange"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"
+        app:itemTextColor="@color/colorOrange"
+        app:itemIconTint="@color/nav_items_colors">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>

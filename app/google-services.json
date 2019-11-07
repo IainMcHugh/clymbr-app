@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "597859282278",
+    "firebase_url": "https://clymbr-alpha.firebaseio.com",
+    "project_id": "clymbr-alpha",
+    "storage_bucket": "clymbr-alpha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597859282278:android:0587b1a3cb891ae58b2ca7",
+        "android_client_info": {
+          "package_name": "com.clymbra.clymbralpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597859282278-6fjnjqk5f0lnqqk78htjcsu9fi3kgeaf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clymbra.clymbralpha",
+            "certificate_hash": "7fa0a27d4b972bde6dbc95d80f979c53086a493b"
+          }
+        },
+        {
+          "client_id": "597859282278-sshrt913psmmo0op59fg8votsbe3gcgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCogcQKa6j3BalwlZIBWS1IhAMI__MbVj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597859282278-sshrt913psmmo0op59fg8votsbe3gcgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

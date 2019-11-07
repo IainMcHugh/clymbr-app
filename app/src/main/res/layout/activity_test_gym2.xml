@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/testGym2_Relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".testGym2Activity"
+    android:background="@color/colorDark">
+
+
+    <ImageView
+        android:id="@+id/logo_imageView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        />
+
+    <ImageButton
+        android:id="@+id/gym_imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        />
+
+    <TextView
+        android:id="@+id/chooseGym_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_zone"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/colorOrange"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/gym_imageButton"/>
+
+    <ImageView
+        android:id="@+id/birdseye_Imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chooseGym_textView"
+        android:layout_above="@+id/navigation_view"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/gym_click_Relativelayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/colorDarkGrey2"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/clkExit_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#00FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@android:drawable/ic_notification_clear_all"
+            android:tint="#00FFFFFF" />
+
+        <ImageView
+            android:id="@+id/gymLogo_Imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/baseline_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/gymName_Textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbname_gym"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gymLogo_Imageview"
+            android:paddingTop="20dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/gymBio_Textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbname_bio"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gymName_Textview"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/gymActiveUsers_Textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gymBio_Textview"
+            android:layout_marginTop="30dp"
+            android:text="@string/active_users"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"
+        app:itemTextColor="@color/colorOrange"
+        app:itemIconTint="@color/nav_items_colors">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

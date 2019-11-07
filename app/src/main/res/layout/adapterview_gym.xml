@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginBottom="4dp"
+    >
+
+    <RelativeLayout
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+        >
+
+        <ImageButton
+            android:id="@+id/gym_ImageButton_adapter"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/gym_Textview_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gym_ImageButton_adapter"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/agencybb"
+            android:text="The Wall"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30sp"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

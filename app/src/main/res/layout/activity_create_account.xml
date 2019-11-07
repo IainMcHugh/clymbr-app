@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity"
+    android:background="@color/colorDark"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/logo_imageView"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/username_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textColor="@color/colorOrange"
+                android:fontFamily="@font/agencybb"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/logo_imageView"
+                android:layout_marginTop="50dp"/>
+
+            <EditText
+                android:id="@+id/username_editText"
+                android:hint="@string/username"
+                android:fontFamily="@font/agencybb"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_white_box"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/username_textView"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/email_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@color/colorOrange"
+                android:fontFamily="@font/agencybb"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/username_editText"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/email_editText"
+                android:hint="@string/email_example"
+                android:fontFamily="@font/agencybb"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_white_box"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/email_textView"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/password_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/colorOrange"
+                android:fontFamily="@font/agencybb"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/email_editText"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/password_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_textView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_white_box"
+                android:hint="@string/enter_password"
+                android:fontFamily="@font/agencybb"
+                android:textSize="20sp"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/repassword_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repassword"
+                android:textColor="@color/colorOrange"
+                android:fontFamily="@font/agencybb"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/password_editText"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/repassword_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repassword_textView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_white_box"
+                android:hint="@string/enter_password"
+                android:fontFamily="@font/agencybb"
+                android:textSize="20sp"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/createacc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/create_account"
+                android:textColor="@color/colorOrange"
+                android:fontFamily="@font/agencybb"
+                android:background="@color/colorTransparent"
+                android:layout_below="@+id/repassword_editText"
+                android:layout_marginTop="50dp"/>
+
+            <Button
+                android:id="@+id/goback_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/already_account"
+                android:textColor="@color/colorOrange"
+                android:fontFamily="@font/agencybb"
+                android:background="@color/colorTransparent"
+                android:layout_below="@+id/createacc_button"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

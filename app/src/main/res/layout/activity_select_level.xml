@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectLevelActivity"
+    android:background="@color/colorDark">
+
+    <ImageView
+        android:id="@+id/logo_imageView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/onemorestep_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/one_more_step"
+        android:textColor="@color/colorOrange"
+        android:fontFamily="@font/agencybb"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/logo_imageView"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"/>
+
+    <RadioGroup
+        android:id="@+id/level_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/onemorestep_textView"
+        android:layout_below="@+id/onemorestep_textView">
+
+        <RadioButton
+            android:id="@+id/novice_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorOrange"
+            android:text="@string/novice"
+            android:textSize="24sp"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/novice_text"
+            android:textSize="18sp"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange"
+            android:paddingTop="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="30dp"/>
+
+        <RadioButton
+            android:id="@+id/intermediate_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorOrange"
+            android:text="@string/intermediate"
+            android:textSize="24sp"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/intermediate_text"
+            android:textSize="18sp"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange"
+            android:paddingTop="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="30dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_text"
+        android:background="@color/colorTransparent"
+        android:textColor="@color/colorOrange"
+        android:textSize="20sp"
+        android:fontFamily="@font/agencybb"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/level_radioGroup"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

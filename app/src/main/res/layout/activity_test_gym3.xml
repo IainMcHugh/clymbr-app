@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/testGym3_RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".testGym3Activity"
+    android:background="@color/colorDark"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/logo_imageView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        />
+
+    <ImageButton
+        android:id="@+id/goBack_imageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/round_arrow_back_black_24dp"
+        android:backgroundTint="@color/colorOrange"
+        android:layout_alignBottom="@+id/logo_imageView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/horziontal_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/class_textView"
+        android:layout_below="@+id/logo_imageView"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/route_RelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/zone_Imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                 />
+
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+
+
+
+
+    <TextView
+        android:id="@+id/class_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/grade_textView"
+        android:text="@string/classs"
+        android:textColor="@color/colorOrange"
+        android:textSize="24sp"
+        android:fontFamily="@font/agencybb"
+        />
+
+    <TextView
+        android:id="@+id/theclass_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/class_textView"
+        android:layout_toEndOf="@+id/class_textView"
+        android:layout_alignBaseline="@id/class_textView"
+        android:text="@string/nulll"
+        android:textColor="@color/colorYellow"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"/>
+
+    <TextView
+        android:id="@+id/grade_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/points_textView"
+        android:layout_marginTop="10dp"
+        android:text="@string/grade"
+        android:textColor="@color/colorOrange"
+        android:textSize="24sp"
+        android:fontFamily="@font/agencybb"/>
+
+    <ImageButton
+        android:id="@+id/updateGrade_imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAlignBottom="true"
+        android:layout_alignBottom="@+id/grade_textView"
+        android:layout_alignTop="@+id/grade_textView"
+        android:layout_toRightOf="@+id/grade_textView"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/baseline_update_black_24dp"
+        android:background="@color/colorTransparent"
+        android:tint="@color/colorWhite"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/thegrade_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/grade_textView"
+        android:text="@string/nulll"
+        android:textColor="@color/colorYellow"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:layout_alignLeft="@+id/theclass_textView"
+        android:layout_alignStart="@+id/theclass_textView"/>
+
+    <TextView
+        android:id="@+id/points_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigation_view"
+        android:layout_marginTop="10dp"
+        android:text="@string/flash_points"
+        android:textColor="@color/colorOrange"
+        android:textSize="24sp"
+        android:fontFamily="@font/agencybb"/>
+
+    <TextView
+        android:id="@+id/thepoints_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/points_textView"
+        android:text="@string/nulll"
+        android:textColor="@color/colorYellow"
+        android:fontFamily="@font/agencybb"
+        android:textSize="24sp"
+        android:layout_alignLeft="@+id/thegrade_textView"
+        android:layout_alignStart="@+id/thegrade_textView"/>
+
+    <TextView
+        android:id="@+id/completed_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/class_textView"
+        android:layout_toEndOf="@+id/class_textView"
+        android:layout_alignBottom="@+id/class_textView"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/completed"
+        android:textColor="@color/colorOrange"
+        android:textSize="24sp"
+        android:fontFamily="@font/agencybb"/>
+
+    <TextView
+        android:id="@+id/thecompleted_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/completed_textView"
+        android:layout_alignRight="@+id/horziontal_scrollview"
+        android:layout_alignEnd="@+id/horziontal_scrollview"
+        android:gravity="end"
+        android:layout_toEndOf="@+id/completed_textView"
+        android:layout_toRightOf="@+id/completed_textView"
+        android:fontFamily="@font/agencybb"
+        android:text="@string/nulll"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/avgTries_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/grade_textView"
+        android:layout_alignLeft="@+id/completed_textView"
+        android:layout_alignStart="@+id/completed_textView"
+        android:layout_marginTop="10dp"
+        android:text="@string/avg_tries"
+        android:textColor="@color/colorOrange"
+        android:textSize="24sp"
+        android:fontFamily="@font/agencybb"/>
+
+    <TextView
+        android:id="@+id/theavgTries_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/thecompleted_textView"
+        android:layout_alignEnd="@+id/thecompleted_textView"
+        android:layout_alignBottom="@+id/avgTries_textView"
+        android:text="@string/nulll"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:fontFamily="@font/agencybb"/>
+
+    <TextView
+        android:id="@+id/progress_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/points_textView"
+        android:layout_alignLeft="@+id/avgTries_textView"
+        android:layout_alignStart="@+id/avgTries_textView"
+        android:layout_marginTop="10dp"
+        android:text="@string/your_progress"
+        android:textColor="@color/colorOrange"
+        android:textSize="24sp"
+        android:fontFamily="@font/agencybb"/>
+
+    <ImageButton
+        android:id="@+id/updateTries_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparent"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignBottom="@id/progress_textView"
+        android:layout_toEndOf="@+id/progress_textView"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+       />
+
+    <TextView
+        android:id="@+id/theprogress_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/theavgTries_textView"
+        android:layout_alignEnd="@+id/theavgTries_textView"
+        android:layout_alignBottom="@+id/progress_textView"
+        android:text="@string/nulll"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:fontFamily="@font/agencybb"/>
+
+    <Button
+        android:id="@+id/topout_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/horziontal_scrollview"
+        android:background="@color/colorOrange"
+        android:fontFamily="@font/agencybb"
+        android:text="@string/topout"
+        android:textColor="@color/colorDark"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/tries_Relativelayout"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorDarkGrey2"
+        android:layout_above="@+id/topout_Button"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        >
+
+
+
+        <TextView
+            android:id="@+id/goodjob_Textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/good_job"
+            android:textSize="30sp"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorDark"
+            android:background="@color/colorOrange"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/tries_Textview"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/tries"
+            android:textSize="30sp"
+            android:background="@color/colorDark"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange"
+            android:layout_below="@+id/goodjob_Textview"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/confirmtries_Imagebutton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tries_Textview"
+            android:layout_margin="2dp"
+            android:background="@color/colorDark"
+            android:tint="@color/colorOrange"
+            android:src="@drawable/ic_check_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/declinetries_Imagebutton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_margin="2dp"
+            android:background="@color/colorDark"
+            android:tint="@color/colorOrange"
+            android:layout_below="@+id/tries_Textview"
+            android:layout_toRightOf="@id/confirmtries_Imagebutton"
+            android:src="@drawable/round_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/notries_Textview"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/tries_Textview"
+            android:layout_toEndOf="@+id/tries_Textview"
+            android:layout_below="@+id/goodjob_Textview"
+            android:text="@string/default_tries"
+            android:layout_margin="2dp"
+            android:background="@color/colorDark"
+            android:textSize="30sp"
+            android:fontFamily="@font/agencybb"
+            android:textColor="@color/colorOrange"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/increment_Imagebutton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorDark"
+            android:tint="@color/colorOrange"
+            android:layout_toEndOf="@+id/notries_Textview"
+            android:layout_toRightOf="@+id/notries_Textview"
+            android:layout_below="@+id/goodjob_Textview"
+            android:src="@android:drawable/arrow_up_float" />
+
+        <ImageButton
+            android:id="@+id/decrement_Imagebutton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorDark"
+            android:tint="@color/colorOrange"
+            android:layout_below="@+id/increment_Imagebutton"
+            android:layout_toEndOf="@+id/notries_Textview"
+            android:layout_toRightOf="@+id/notries_Textview"
+            android:src="@android:drawable/arrow_down_float" />
+
+    </RelativeLayout>
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_dialog"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:spinnerMode="dialog"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        />-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"
+        app:itemTextColor="@color/colorOrange"
+        app:itemIconTint="@color/nav_items_colors">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
